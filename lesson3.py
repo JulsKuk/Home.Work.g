@@ -1,12 +1,7 @@
-user_data = input("Введите любое значение: ")
-
-line_data = "Это строка в которую {} новую строку".format(user_data)
-print(line_data)
-
-line_data = "Это строка в которую {} новую строку".format("замена в строке")
-print(line_data)
-print(len(line_data))
-if line_data.find("строка",4,10) != -1  :
-    print("Да")
-else:
-    print("Нет")
+incoming_number = 867
+inverted_number = 0
+while incoming_number > 0:
+    number = incoming_number % 10
+    incoming_number = incoming_number // 10
+    inverted_number = inverted_number * 10 + number
+print(inverted_number)
